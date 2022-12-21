@@ -1,66 +1,52 @@
-#include<iostream>
+#include <iostream>
+
 using namespace std;
 
-//creating a class circle 
+// Creating a class called Circle
 class Circle {
+private:
+    int radius;
 
-    //private attribute radius
-    private:
-        int radius;
-
-    public:
-    //constructur to pass the value of radius
-     Circle(int r){
-        radius=r;
+public:
+    // Constructor to pass the value of radius
+    Circle(int r) {
+        radius = r;
     }
 
-    /*setter function to set class instance private radius to 
-    public radius we got from constructor*/
-    void setRadius(int radius){
-         this->radius= radius;
+    // Setter function to set the private radius to the public radius we got from the constructor
+    void setRadius(int radius) {
+        this->radius = radius;
     }
 
-    // helps to acess private instance radius
-    int getRadius(){
+    // Helps to access the private instance radius
+    int getRadius() {
         return radius;
     }
-          
 };
 
-//class utility to calculate area
-class Utility{
-
-    public:
-
-    //passing object "c of class Circle " to acess it's functions 
-    double calculateArea(Circle c){
-        int r= c.getRadius();
-
-        return 3.14*r*r;
-        /*int area = 3.14*(r*r);
-        return area;
-        */
+// Class utility to calculate area
+class Utility {
+public:
+    // Passing an object "c" of class Circle to access its functions
+    double calculateArea(Circle c) {
+        int r = c.getRadius();
+        return 3.14 * r * r;
     }
 };
 
- int main(){
+int main() {
     int radius;
-    cout<<"Enter the radious(in cm) \n";
-    cout<<"-> ";
-    cin>> radius;
+    cout << "Enter the radius (in cm):" << endl;
+    cout << "-> ";
+    cin >> radius;
 
-    //passing radius taken from user to obj "c1"
+    // Passing the radius taken from the user to the object "c1"
     Circle c1(radius);
 
-    //creating obj for utility class 
+    // Creating an object for the Utility class
     Utility u1;
 
-    cout<<"area of the circle is "
-
-    /*c1 obj is passed which will return radius using 
-        getter*/
-    <<u1.calculateArea(c1)
-    <<"cm^2"<<endl;
+    cout << "Area of the circle is " << u1.calculateArea(c1) << " cm^2" << endl;
 
     return 0;
- }
+}
