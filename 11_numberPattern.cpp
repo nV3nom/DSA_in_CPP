@@ -1,6 +1,15 @@
 // This code prints out a number triangle made up of integers from 1 to n, with spaces between each number. 
 // The number of rows will be equal to n, and the first row will contain a single 1, 
 // the second row will contain two 1s separated by spaces, and so on. 
+/*
+for n=5
+outpu:
+1                 1   
+1 2             2 1   
+1 2 3         3 2 1		
+1 2 3 4     4 3 2 1		
+1 2 3 4 5 5 4 3 2 1
+*/
 #include <bits/stdc++.h>
 
 using namespace std;
