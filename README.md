@@ -1,2 +1,2 @@
 # cppPrograms
-Programs in c++ i have attempted 
+Structured Questions with solutions to get your grip in DSA.
