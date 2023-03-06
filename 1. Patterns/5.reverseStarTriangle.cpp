@@ -1,3 +1,16 @@
+/*
+https://practice.geeksforgeeks.org/problems/triangle-pattern/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_5
+Input: 5
+Output:
+* * * * *
+* * * * 
+* * * 
+* *  
+* 
+
+*/
+
+
 // This is the main driver code which reads the input, calls the Solution class, and prints the output
 #include <bits/stdc++.h> // This is a header file which includes all the standard library headers in one place
 
