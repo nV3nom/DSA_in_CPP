@@ -1,14 +1,22 @@
-// This code prints out a number triangle made up of integers from 1 to n, with spaces between each number. 
-// The number of rows will be equal to n, and the first row will contain a single 1, 
-// the second row will contain two 1s separated by spaces, and so on. 
 /*
-for n=5
-outpu:
-1                 1   
-1 2             2 1   
-1 2 3         3 2 1		
-1 2 3 4     4 3 2 1		
+https://practice.geeksforgeeks.org/problems/double-triangle-pattern-1662664259/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=pattern_12
+Input: 5
+
+Output:
+1                 1
+1 2             2 1
+1 2 3         3 2 1
+1 2 3 4     4 3 2 1
 1 2 3 4 5 5 4 3 2 1
+
+Algo:
+Start by defining a function called printTriangle that takes a single argument N as input.
+For each row of the triangle, iterate from 1 to N (inclusive).
+If the current row number is even, create a list called values and append alternating 0's and 1's to it using the modulus operator.
+If the current row number is odd, create a list called values and append alternating 1's and 0's to it using the modulus operator.
+Concatenate the values in the values list into a single string separated by spaces.
+Append a newline character to the end of the string.
+After all rows have been processed, print the output string, excluding the final newline character at the end.
 */
 #include <bits/stdc++.h>
 
